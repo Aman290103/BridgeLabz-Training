@@ -5,7 +5,7 @@ public class BaseClass{
     // PRIVATE : only inside BaseClass
     private int privateValue = 10;
 
-    // PROTECTED : BaseClass + DerivedClass
+    // PROTECTED : BaseClass + SubClass
     protected int protectedValue = 20;
 
     // INTERNAL : same project
@@ -14,9 +14,16 @@ public class BaseClass{
     // PUBLIC : accessible everywhere
     public int publicValue = 40;
 
-    // PUBLIC method to show private member
+    // PROTECTED INTERNAL : same project OR derived class
+    protected internal int protectedInternalValue = 50;
+
+    // PRIVATE PROTECTED : same class OR derived class (same project)
+    private protected int privateProtectedValue = 60;
+
+    // PUBLIC method to show private members
     public void PrivateMethod(){
         Console.WriteLine("Private Value: " + privateValue);
+        Console.WriteLine("Private Protected Value: " + privateProtectedValue);
     }
 }
 
@@ -24,6 +31,8 @@ public class BaseClass{
 public class SubClass : BaseClass{
     public void ProtectedMethod(){
         Console.WriteLine("Protected Value: " + protectedValue);
+        Console.WriteLine("Protected Internal Value: " + protectedInternalValue);
+        Console.WriteLine("Private Protected Value: " + privateProtectedValue);
     }
 }
 
@@ -35,8 +44,14 @@ class AccessModifiers{
         // Accessible
         Console.WriteLine("Public Value: " + obj.publicValue);
         Console.WriteLine("Internal Value: " + obj.internalValue);
+        Console.WriteLine("Protected Internal Value: " + obj.protectedInternalValue);
 
-        // Private not accessible directly
+        // Access private via public method
         obj.PrivateMethod();
+
+        SubClass sub = new SubClass();
+        sub.ProtectedMethod();
+
+        
     }
 }
