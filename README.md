@@ -21,6 +21,7 @@
 - ⚙️ Learned **C# Operators**
 - 📈 Advanced **C# Programming Elements**
 - 💻 Practiced Level 1 and Level 2 lab practice programs including:
+  
   **Level 1:**
   - 📐 Area of Triangle calculation
   - 🧮 Basic Calculator operations
@@ -52,7 +53,7 @@
   - 💰 Total Income calculator
   - 🏞️ Triangular Park Rounds problem
   
-  - 💻 Practiced programming elements including:
+#### 💻 Programming Elements Practiced:
   - 🏷️ Data Types implementation (int, float, double, char, long, short, bool)
   - 🔄 Type Casting between different data types
   - ➕ Arithmetic Operators (+, -, *, /, %)
