@@ -67,5 +67,96 @@
 
 ### 📅 December 20th, 2025
 - 🔐 Studied **C# Access Modifiers**
+- 🔄 Learned **C# Control Flow Statements**
 - 💻 Practiced programming elements including:
   - 🔒 Access Modifiers (public, private, protected, internal)
+  - 🔄 Conditional Statements (if, else if, else)
+  - 🔁 Loop Statements (for, while, do-while)
+
+### 📅 December 22nd, 2025
+- 🔄 Mastered **C# Control Flow Programming**
+- 💻 Solved Level 1 and Level 2 control flow lab practice problems including:
+  
+  **Level 1:**
+  - 💰 Bonus of Employee calculator
+  - ✅ Check and Sum of Natural Numbers
+  - 🔢 Divisible by 5 checker
+  - ❗ Factorial of Number (while loop)
+  - ❗ Factorial of Number (for loop)
+  - 🔍 Is First The Smallest of Three
+  - 📊 Largest in Three Numbers
+  - ✖️ Multiplication Table generator
+  - 🔢 Odd or Even in Natural Numbers
+  - ➕➖ Positive, Negative or Zero checker
+  - 🚀 Rocket Countdown (while loop)
+  - 🚀 Rocket Countdown (for loop)
+  - 🌸 Spring Season checker
+  - ➕ Sum of Natural Numbers (while loop)
+  - ➕ Sum of Natural Numbers (for loop)
+  - 🔢 Sum of Numbers
+  - 🛑 Sum of Numbers Using Break
+  - 🗳️ Voting Age validator
+  
+  **Level 2:**
+  - 📏 BMI Calculator
+  - 🔢 Factors of Number finder
+  - 🎮 FizzBuzz (for loop)
+  - 🎮 FizzBuzz (while loop)
+  - 🎓 Grade Calculator
+  - 🔍 Greatest Factor of Number
+  - 📅 Leap Year checker (version 1)
+  - 📅 Leap Year checker (version 2)
+  - ✖️ Multiple of Number finder
+  - ⚡ Power of Number calculator
+  - 🔢 Prime Number checker
+  - 👥 Youngest Friend finder
+
+#### 🔧 Control Flow Concepts Practiced:
+  - 🔄 if-else conditional statements
+  - 🔁 for, while, and do-while loops
+  - 🔢 Nested loops and conditions
+  - 🛑 Break and continue statements
+  - 🧮 Mathematical computations with loops
+  - ✅ Input validation and error handling
+  - 🎯 Algorithm implementation using control structures
+
+### 📅 December 23rd, 2025
+- 📊 Explored **C# Arrays** documentation
+- 🔢 Learned **Array Operations and Manipulations**
+- 💻 Solved Level 1 and Level 2 array lab practice problems including:
+  
+  **Level 1:**
+  - 📋 Create and Copy 2D Array
+  - 🔢 Factors of Numbers
+  - 🎮 FizzBuzz array implementation
+  - 📏 Mean Height of Players
+  - ✖️ Multiplication Table (array-based)
+  - ✖️ Multiplication Table 6 to 9
+  - ➕➖ Positive, Negative or Zero (array)
+  - 🔢 Store Numbers and Sum
+  - 🗳️ Voting Age (array validation)
+  
+  **Level 2:**
+  - 📏 BMI Calculator (1D array)
+  - 📊 BMI Calculator (2D array)
+  - 💰 Bonus of Employees (array management)
+  - 🔢 Frequency of Digit
+  - 🥇 Largest and Second Largest Digit
+  - 🔄 Reverse the Number
+  - 🎓 Student Percentage and Grade (version 1)
+  - 🎓 Student Percentage and Grade (version 2)
+  - 👥 Youngest Friend (array-based)
+  - 👥 Youngest Friend (enhanced version)
+
+#### 🔧 Array Programming Concepts Practiced:
+  - 📊 Array declaration and initialization
+  - 🔄 Array traversal using for loops
+  - 🔍 Finding minimum/maximum values in arrays
+  - 📝 String array operations
+  - 🎯 Index-based data access
+  - ✅ Input validation with loop control
+  - 🧮 Mathematical operations on array elements
+  - 💾 Data storage and retrieval patterns
+  - 📋 2D array operations
+  - 🔢 Multi-dimensional array processing
+
