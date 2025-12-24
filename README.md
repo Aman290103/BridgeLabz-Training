@@ -157,5 +157,5 @@
   - 🧮 Mathematical operations on array elements
   - 💾 Data storage and retrieval patterns
   - 📋 2D array operations
-  - 🔢 Multi-dimensional array processing
+  - 🔢 Multi-dimensional array processing.
 
