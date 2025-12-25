@@ -174,4 +174,48 @@
   - 🏃 Triangle Run calculator
   - 📐 Trigonometric Functions
   - 🌡️ Wind Chill Temperature calculator
+  
+### 📅 December 25th, 2025
+- 🔧 Advanced **C# Methods** programming
+- 💻 Solved Level 2 and Level 3 method lab practice problems including:
+  
+  **Level 2:**
+  - 📏 BMI Calculator (method-based)
+  - 🔢 Factors Program (with array operations and mathematical computations)
+  - 📅 Leap Year checker (method implementation)
+  - 🎲 Operation On Random Numbers
+  - ➕➖ Positive Negative Even Odd checker
+  - 📊 Quadratic Roots calculator
+  - ➕ Sum of Natural Numbers (method-based)
+  - 📏 Unit Converter (version 1)
+  - 📏 Unit Converter (version 2)
+  - 📏 Unit Converter (version 3)
+  - 🗺 Voting Age validator (method implementation)
+  - 👥 Youngest Friend finder (enhanced with if-else logic)
+  
+  **Level 3:**
+  - 💰 Bonus of Employee calculator (advanced)
+  - 📅 Calendar operations
+  - 📊 Collinear Points checker
+  - 📏 Euclidean Distance calculator
+  - 🏈 Height of Football Team analyzer
+  - 🔢 Matrix Manipulation (comprehensive matrix operations)
+  - 🔢 Number Checker (version 1)
+  - 🔢 Number Checker (version 2)
+  - 🔢 Number Checker (version 3)
+  - 🔢 Number Checker (version 4)
+  - 🔢 Number Checker (version 5)
+  - 🔐 OTP Generator
+  - 🎓 Percentage and Grade of Student calculator
+
+#### 🔧 Advanced Method Concepts Practiced:
+  - 🔄 Method overloading and parameters
+  - 📊 Array manipulation through methods
+  - 🧮 Complex mathematical operations
+  - 🔢 Multi-dimensional array processing
+  - ⚠️ Error handling without exceptions
+  - 🎯 Algorithm implementation using static methods
+  - 🎲 Random number generation and operations
+  - 📏 Unit conversion algorithms
+  - 📊 Geometric calculations and validation.
 
