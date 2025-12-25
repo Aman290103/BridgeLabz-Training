@@ -21,6 +21,6 @@ public class WindChillTemperature{
 
             WindChillTemperature wct = new WindChillTemperature();
             double windChill = wct.CalculateWindChill(temperature,windSpeed);
-            Console.WriteLine($"The wind chill temperature is: {windChill}"); 
+            Console.WriteLine($"The wind chill temperature is: {windChill}");
       }
 }
