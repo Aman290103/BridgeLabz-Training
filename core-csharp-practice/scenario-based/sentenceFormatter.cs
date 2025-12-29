@@ -1,13 +1,7 @@
-/*Strings – Sentence Formatter
-1. Scenario: A text editing tool receives poorly formatted input from users. Your task is to auto-correct formatting by fixing spacing and capitalizing the first letter of each sentence.
-Problem:
-Write a method that takes a paragraph as input and returns a corrected version with:
-● One space after punctuation,
-● Capital letter after period/question/exclamation marks,
-● Trimmed extra spaces.*/     
-
 using System;
 
+public class SentenceFormatter
+{
     // Entry point
     public static void Main()
     {
