@@ -219,3 +219,191 @@
   - 📏 Unit conversion algorithms
   - 📊 Geometric calculations and validation.
 
+### 📅 December 26th & 27th, 2025
+- 📝 Mastered **C# Strings** and **String Handling**
+- 🔤 Explored core string concepts and operations
+- 🔧 Learned **C# Built-in Functions** and **Date Time Functions**
+- 💻 Solved Level 1 string lab practice problems including:
+  
+  **Level 1:**
+  - ⚠️ Argument Out of Range Exception
+  - 🔤 Characters of String
+  - 🔍 Compare Two Strings
+  - ⚠️ Format Exception handling
+  - ⚠️ Index Out of Bound Exception
+  - ⚠️ Index Out of Range Exception for Arrays
+  - 🔤 Lowercase conversion
+  - ⚠️ Null Reference Exception
+  - ✂️ Split and Display
+  - 🔤 SubString Create
+  - 🔤 UpperCase conversion
+  
+  **Extra String Problems:**
+  - 🔄 Check for Anagrams
+  - 🔍 Compare Two Strings (advanced)
+  - 🔍 Count Vowels and Consonants
+  - 🗑️ Duplicates Removal
+  - 📏 Longest Word finder
+  - 📊 Most Frequent Character
+  - 🔄 Palindrome String checker
+  - 🗑️ Remove Specific Word
+  - 🔄 Replace Word
+  - 🔄 String Reverse
+  - 🔍 SubString Occurrence
+  - 🔤 Toggle Case Characters
+  
+#### 🔧 String Programming Concepts Practiced:
+  - 📝 String declaration and initialization
+  - 🔤 Character manipulation and ASCII operations
+  - 🔄 String traversal using loops
+  - 🔍 Pattern matching and searching
+  - 📊 Frequency analysis and counting
+  - 🔄 String reversal algorithms
+  - 🔤 Case conversion operations
+  - ✅ Palindrome validation logic
+  - 🎯 Menu-driven program design
+  - 🎲 Game logic implementation
+
+#### 🛠️ Built-in Functions Explored:
+  - 📏 Math functions (Math.Abs, Math.Max, Math.Min, Math.Pow, Math.Sqrt)
+  - 🔤 String functions (Length, Substring, ToUpper, ToLower, Contains)
+  - 📅 DateTime functions (DateTime.Now, AddDays, ToString formatting)
+  - 🎲 Random number generation (Random.Next)
+  - 🔄 Type conversion functions (Convert.ToInt32, Parse methods)
+
+### 📅 December 28th, 2025
+- 🛠️ Advanced **C# Built-in Functions** programming
+- 💻 Solved practical problems using built-in functions including:
+  
+  **Built-in Function Problems:**
+  - 🧮 Basic Calculator
+  - 📅 Date Arithmetic operations
+  - 📊 Date Comparison
+  - 📅 Date Formatting
+  - ❗ Factorial Using Recursion
+  - 🔢 Fibonacci Sequence Generator
+  - 🧮 GCD and LCM Calculator
+  - 📊 Maximum of Three Numbers
+  - 🎮 Number Guessing Game
+  - 🔄 Palindrome Checker
+  - 🔢 Prime Number Checker
+  - 🌡️ Temperature Converter
+  - 🌍 Time Zones and DateTime Offset
+
+#### 🔧 Built-in Function Concepts Practiced:
+  - 📏 Mathematical computations using Math class
+  - 📅 Date and time manipulations
+  - 🎲 Random number generation for games
+  - 🔄 Recursive function implementations
+  - 📊 Comparison and validation algorithms
+  - 🌍 Time zone handling and conversions
+  - 🧮 Advanced mathematical operations (GCD, LCM)
+  - 🎯 Interactive console applications
+
+### 📅 December 29th, 2025
+- 🎯 Advanced **Scenario-based Programming**
+- 🏢 Learned **C# Classes and Objects** basic concepts
+- 💻 Solved comprehensive real-world problems including:
+  
+  **String Processing Scenarios:**
+  - 📝 Sentence Formatter (auto-correct formatting)
+    - ✂️ One space after punctuation
+    - 🔤 Capital letter after sentence marks
+    - 🗑️ Trimmed extra spaces
+  - 📊 Text Analyzer (paragraph analysis)
+    - 🔢 Word count functionality
+    - 📏 Longest word finder
+    - 🔄 Case-insensitive word replacement
+    - ⚠️ Edge case handling (empty strings)
+  
+  **Array Processing Scenarios:**
+  - 🌡️ Temperature Analyzer (2D array processing)
+    - 🔥 Hottest day identification
+    - ❄️ Coldest day identification
+    - 📊 Average temperature per day
+  - 🎓 Student Test Score Manager
+    - 📊 Average score calculation
+    - 🥇 Highest and lowest score finder
+    - 📈 Above-average score identification
+    - ✅ Input validation (negative/non-numeric)
+  
+  **Game Development Scenarios:**
+  - 🎮 Snake and Ladder Game (multi-player)
+    - 🎲 Dice rolling mechanics
+    - 🐍 Snake and ladder positioning
+    - 👥 Multi-player turn management
+    - 🏆 Win condition validation
+
+#### 🔧 Scenario-based Programming Concepts Practiced:
+  - 📝 Text processing and formatting algorithms
+  - 🔍 String manipulation and analysis
+  - 📊 Multi-dimensional array operations
+  - 📈 Statistical calculations and data analysis
+  - ⚠️ Comprehensive error handling
+  - 🎯 Menu-driven application design
+  - 💾 Data validation and edge case management
+  - 🧮 Real-world problem-solving approaches
+
+#### 🏢 Object-Oriented Programming Concepts Explored:
+  - 📝 Class definition and structure
+  - 🔧 Object instantiation and usage
+  - 📊 Fields and properties
+  - 🔄 Methods within classes
+  - 🔒 Access modifiers (public, private)
+
+### 📅 December 30th, 2025
+- 🎯 Advanced **System Design and Management**
+- 💻 Solved complex real-world application scenarios including:
+  
+  **Library Management System:**
+  - 📚 Book Search and Checkout system
+    - 📖 Store book details (title, author, status) in arrays
+    - 🔍 Partial title search using string operations
+    - 📊 Array-based data storage
+    - 🔄 Methods for searching, displaying, and updating book status
+    - ✅ Checkout/available status management
+  
+  **Educational Assessment System:**
+  - 🎓 EduQuiz – Student Quiz Grader
+    - 📝 10-question quiz grading system
+    - 🔍 String array comparison (correctAnswers[] vs studentAnswers[])
+    - 🧮 calculateScore() method implementation
+    - 🔤 Case-insensitive matching with .equalsIgnoreCase()
+    - 📊 Detailed feedback per question (Correct/Incorrect)
+    - 📈 Percentage score calculation and pass/fail determination
+
+#### 🔧 System Design Concepts Practiced:
+  - 📚 Data management with arrays
+  - 🔍 Search algorithms and string operations
+  - 🔄 Status tracking and updates
+  - 📊 Score calculation and assessment logic
+  - 🎯 Method-driven architecture
+  - ✅ Input validation and error handling
+  - 📈 Performance evaluation systems
+  - 🧮 Real-world application development
+
+### 📅 December 31st, 2025
+- 🏗️ Advanced **C# Object-Oriented Programming**
+- 📚 Learned core OOP concepts and keywords including:
+  
+  **Constructor Concepts:**
+  - 🏠 Constructor fundamentals and usage
+  - 🔧 Types of constructors (Default, Parameterized, Copy)
+  - 🎯 Constructor overloading
+  - 🔄 Constructor chaining with this keyword
+  
+  **Advanced Keywords:**
+  - 🔗 this keyword for current instance reference
+  - 🔒 sealed keyword for inheritance prevention
+  - ⚡ static keyword for class-level members
+  - 🔍 is operator for type checking
+
+#### 🏗️ OOP Concepts Practiced:
+  - 🏠 Constructor implementation and overloading
+  - 🔗 Instance vs class-level member access
+  - 🔒 Inheritance control with sealed classes
+  - ⚡ Static members and utility methods
+  - 🔍 Runtime type checking and validation
+  - 🎯 Object initialization patterns
+  - 🔄 Method and constructor chaining
+
