@@ -549,6 +549,31 @@
   - 📝 Access modifiers in inheritance hierarchies
   - 🎲 Real-world inheritance modeling patterns
 
+- 📐 Advanced **Object Modeling** and **Object Relationships**
+- 💻 Solved object relationship and communication problems including:
+  
+  **Aggregation Problems:**
+  - 📚 Library and Books (Library aggregates Book objects)
+  - 🏫 School and Students with Courses (School-Student aggregation)
+  
+  **Association Problems:**
+  - 🏦 Bank and Account Holders (Customer-Bank association)
+  - 🏥 Hospital, Doctors, and Patients (Doctor-Patient consultation)
+  - 🛒 E-commerce Platform (Customer-Order-Product relationships)
+  - 🎓 University Management System (Student-Professor-Course interactions)
+  
+  **Composition Problems:**
+  - 🏢 Company and Departments (Company contains Departments and Employees)
+  - 🎓 University with Faculties and Departments (University-Department composition)
+
+#### 📐 Object Modeling Concepts Practiced:
+  - 🔗 Association relationships and communication
+  - 📦 Aggregation ("has-a" relationships)
+  - 🏗️ Composition ("part-of" relationships)
+  - 💬 Object communication through methods
+  - 📊 UML diagram design principles
+  - 🎯 Real-world system modeling patterns
+
 
 
 
