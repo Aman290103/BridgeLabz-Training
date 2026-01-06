@@ -1,0 +1,8 @@
+﻿Goal: Design a Bird Sanctuary system using Inheritance and Polymorphism.
+Scenario: EcoWing Wildlife Conservation Center needs to track birds.● Attributes: defined in base class Bird.
+● Interfaces: IFlyable (method Fly()), ISwimmable (method Swim()).
+● Derived Classes: Eagle, Sparrow (implement IFlyable), Duck, Penguin (implement
+ISwimmable), Seagull (implements both).
+●Use Array Concept
+● Polymorphism: Iterate through list, check interface type (is IFlyable), and call
+methods.

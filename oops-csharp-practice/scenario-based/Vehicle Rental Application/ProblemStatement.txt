@@ -1,0 +1,4 @@
+﻿ Vehicle Rental Application
+● Concepts: Vehicle, Bike, Car, Truck, Customer.
+● Access Modifiers: protected fields.
+● Interface: IRentable with CalculateRent(int days).

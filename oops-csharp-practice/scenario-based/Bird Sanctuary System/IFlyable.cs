@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BridgeLabz.Bird_Sanctuary_System
+{
+    public interface IFlyable
+    {
+        public void fly();
+    }
+
+}
