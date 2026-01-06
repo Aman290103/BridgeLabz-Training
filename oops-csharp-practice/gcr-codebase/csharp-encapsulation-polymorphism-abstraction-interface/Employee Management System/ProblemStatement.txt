@@ -1,0 +1,9 @@
+1. Employee Management System
+
+Description: Build an employee management system with the following requirements:
+Use an abstract class Employee with fields like employeeId, name, and baseSalary.
+Provide an abstract method CalculateSalary() and a concrete method DisplayDetails().
+Create two subclasses: FullTimeEmployee and PartTimeEmployee, implementing CalculateSalary() based on work hours or fixed salary.
+Use encapsulation to restrict direct access to fields and provide properties for access.
+Create an interface IDepartment with methods like AssignDepartment() and GetDepartmentDetails().
+Ensure polymorphism by processing a list of employees and displaying their details using the Employee reference.
