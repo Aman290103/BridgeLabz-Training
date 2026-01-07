@@ -1,0 +1,17 @@
+ Hospital Patient Management
+Description: Design a system to manage patients in a hospital.
+Abstract Class:
+Create an abstract class Patient with fields: patientId, name, and age.
+Add an abstract method CalculateBill().
+Implement a concrete method GetPatientDetails().
+Subclasses:
+Extend Patient into InPatient and OutPatient.
+Implement CalculateBill() differently for each subclass.
+Interface:
+Implement an interface IMedicalRecord.
+Define methods AddRecord() and ViewRecords().
+Encapsulation:
+Protect sensitive patient data like diagnosis and medical history.
+Polymorphism:
+Use a Patient reference to handle different patient types dynamically.
+Display billing details based on polymorphic behavior.
