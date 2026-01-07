@@ -11,7 +11,7 @@ namespace Employee_Wage_Computation
 		private Employee _employee;
 		private const int Wage_Per_Hour = 20;
 		private const int Full_Day_Hour = 8;
-
+		private const int Part_Time_Hour = 8;
 		public Employee addEmployee()
 		{
 			Console.WriteLine("Enter Employee Details: ");
@@ -51,7 +51,6 @@ namespace Employee_Wage_Computation
 
 		}
 
-//--------UC2- Calculate Daily Employee Wage---------------------------//
 		public void CalculateDailyWage(long e)
 		{
 			bool isPresent = CheckAttendance(e);
@@ -64,6 +63,12 @@ namespace Employee_Wage_Computation
 			{
 				Console.WriteLine("Daily Employee Wage: 0");
 			}
+		}
+
+		public void CalculatePartTimeWage()
+		{
+			int wage = Part_Time_Hour * Wage_Per_Hour;
+			Console.WriteLine("Part Time Daily Wage: " + wage);
 		}
 	}
 }
