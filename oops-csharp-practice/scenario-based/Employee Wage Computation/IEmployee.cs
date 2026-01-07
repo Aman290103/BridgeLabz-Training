@@ -12,5 +12,6 @@ namespace Employee_Wage_Computation
 		public bool CheckAttendance(long e);
 		public void CalculateDailyWage(long e);
 		void CalculatePartTimeWage();
+		void CalculateMonthlyWage(long e);
 	}
 }
