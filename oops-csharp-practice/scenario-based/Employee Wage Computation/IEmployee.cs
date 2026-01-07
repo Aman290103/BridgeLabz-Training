@@ -10,5 +10,6 @@ namespace Employee_Wage_Computation
 	{
 		Employee addEmployee();
 		public bool CheckAttendance(long e);
+		public void CalculateDailyWage(long e);
 	}
 }
