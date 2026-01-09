@@ -1,0 +1,57 @@
+/*Sort a Stack Using Recursion
+Problem: Given a stack, sort its elements in ascending order using recursion.
+Hint: Pop elements recursively, sort the remaining stack, and insert the popped element back at the correct position.
+*/
+
+using System;
+using System.Collections.Generic;
+
+public class StackSorter
+{
+    public static void SortStack(Stack<int> stack)
+    {
+        if (stack.Count <= 1)
+            return;
+
+        int top = stack.Pop();
+        SortStack(stack);
+        InsertSorted(stack, top);
+    }
+
+    private static void InsertSorted(Stack<int> stack, int element)
+    {
+        if (stack.Count == 0 || element > stack.Peek())
+        {
+            stack.Push(element);
+        }
+        else
+        {
+            int temp = stack.Pop();
+            InsertSorted(stack, element);
+            stack.Push(temp);
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        Stack<int> stack = new Stack<int>();
+        stack.Push(3);
+        stack.Push(1);
+        stack.Push(4);
+        stack.Push(2);
+
+        Console.WriteLine("Original Stack:");
+        foreach (int item in stack)
+        {
+            Console.Write(item + " ");
+        }
+
+        SortStack(stack);
+
+        Console.WriteLine("\nSorted Stack:");
+        foreach (int item in stack)
+        {
+            Console.Write(item + " ");
+        }
+    }
+}
