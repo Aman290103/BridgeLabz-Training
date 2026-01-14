@@ -20,6 +20,7 @@ namespace BridgeLabzTraining.AddressBook_System
 				while (true)
 				{
 					Console.WriteLine("\n1. Add Contact");
+					Console.WriteLine("2. Edit Contact");
 					Console.WriteLine("3. Exit");
 
 					int choice = Convert.ToInt32(Console.ReadLine());
@@ -30,7 +31,11 @@ namespace BridgeLabzTraining.AddressBook_System
 							addressBook.AddContact();  
 							break;
 
-						case 3:
+					case 2 : 
+							addressBook.EditContact();
+							break;
+
+					case 3:
 							return;
 					}
 				}

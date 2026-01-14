@@ -12,8 +12,7 @@ namespace BridgeLabzTraining.AddressBook_System
 		private ContactPerson[] contacts = new ContactPerson[100];
 		int Contactcount = 0;
 
-//-----------------------UC 1 + UC 2--------------------------------//
-
+		//-----------------------UC 1 + UC 2--------------------------------//
 		public void AddContact()
 		{
 			if (Contactcount >= contacts.Length)
@@ -44,7 +43,55 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.WriteLine("\nContact Added Successfully!");
 		}
 
-		
+		//-----------------------UC - 3-----------------------------//
+
+		public void EditContact()
+		{
+			if (Contactcount == 0)
+			{
+				Console.WriteLine("No contacts available to edit.");
+				return;
+			}
+
+			Console.WriteLine("Enter First Name to edit: ");
+			string firstName = Console.ReadLine();
+
+
+			for (int i = 0; i < Contactcount; i++)
+			{
+				if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
+	            { 
+					Console.WriteLine("\nEditing Contact: ");
+					Console.WriteLine(contacts[i]);
+
+					Console.Write("Enter New Address: ");
+					contacts[i].Address = Console.ReadLine();
+
+					Console.Write("Enter New City: ");
+					contacts[i].City = Console.ReadLine();
+
+					Console.Write("Enter New State: ");
+					contacts[i].State = Console.ReadLine();
+
+					Console.Write("Enter New Zip: ");
+					contacts[i].Zip = Console.ReadLine();
+
+					Console.Write("Enter New Phone Number: ");
+					contacts[i].PhoneNumber = Console.ReadLine();
+
+					Console.Write("Enter New Email: ");
+					contacts[i].Email = Console.ReadLine();
+
+					Console.WriteLine("\nContact updated successfully!");
+					return;
+				}
+			}
+
+			Console.WriteLine("Contact not found!");
+		}
+
+
+
 
 	}
 }

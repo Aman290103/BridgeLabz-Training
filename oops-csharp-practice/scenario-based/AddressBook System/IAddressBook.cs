@@ -9,5 +9,6 @@ namespace BridgeLabzTraining.AddressBook_System
     public interface IAddressBook
     {
         public void AddContact();
+        public void EditContact();
 	}
 }
