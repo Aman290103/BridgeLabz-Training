@@ -611,10 +611,354 @@
   - 📊 Complex system design patterns
   - 🎯 Clean architecture and code organization
 
+### 📅 January 8th, 2026
+- 🏠 Advanced **Smart Home Automation System**
+- 💻 Implemented IoT-based home automation using OOP concepts including:
+- 🔗 Advanced **Data Structures - Linked Lists**
+- 💻 Mastered linked list implementations and solved comprehensive problems including:
+  
+  **Singly Linked List Problems:**
+  - 🎓 Student Record Management (Add, Delete, Search, Update records)
+  - 📦 Inventory Management System (Item tracking, sorting, total value calculation)
+  - 👥 Social Media Friend Connections (Friend management, mutual friends finder)
+  
+  **Doubly Linked List Problems:**
+  - 🎬 Movie Management System (Bidirectional traversal, rating updates)
+  - 📚 Library Management System (Book tracking, forward/reverse display)
+  - ↩️ Undo/Redo Text Editor (State management, history tracking)
+  
+  **Circular Linked List Problems:**
+  - 📋 Task Scheduler (Circular task management, priority-based scheduling)
+  - 🔄 Round Robin CPU Scheduling (Process scheduling, time quantum simulation)
+  - 🎫 Online Ticket Reservation System (Circular booking management)
 
+#### 🔗 Linked List Best Practices Implemented:
+  - 🎯 Head & Tail management for O(1) operations
+  - ✅ Null checks to prevent errors
+  - ⚡ Efficient insertion/deletion at beginning/end
+  - 💾 Proper memory management and pointer nullification
+  - 🎯 Boundary handling for edge cases
+  - 🔄 Infinite loop prevention in circular lists
+  - 📦 Modular code with reusable functions
+  - 📊 Simple and clear implementation patterns
 
+### 📅 January 9th, 2026
+- 🏧 Advanced **ATM Dispenser Logic System**
+- 💻 Implemented optimal currency dispensing algorithm with multiple scenarios:
+  
+  **ATM Dispenser Scenarios:**
+  - 💵 Scenario A: Optimal note combination for ₹880
+    - Available notes: ₹1, ₹2, ₹5, ₹10, ₹20, ₹50, ₹100, ₹200, ₹500
+    - Greedy algorithm for minimum notes
+    - Optimal combination calculation
+  - 🚫 Scenario B: Dynamic note availability
+    - Temporarily remove ₹500 notes
+    - Update dispensing strategy
+    - Recalculate optimal combinations
+  - ⚠️ Scenario C: Fallback mechanism
+    - Handle cases when exact change isn't possible
+    - Display alternative combinations
+    - Error handling and user notifications
 
+#### 🏧 ATM Logic Concepts Practiced:
+  - 🧠 Greedy algorithm implementation
+  - 🔄 Dynamic programming for optimization
+  - 📊 Minimum note calculation logic
+  - 🔄 Adaptive strategy based on availability
+  - ✅ Edge case handling and validation
+  - 💰 Real-world financial system modeling
+  - 🛡️ Fallback and error recovery mechanisms
+  - 🎯 Algorithm optimization techniques
 
+- 🏋️ **FitTrack – Fitness Tracker System**
+- 💻 Developed comprehensive fitness tracking application using OOP concepts:
+  
+  **Fitness Tracker Components:**
+  - 👤 UserProfile class (User data and fitness goals)
+  - 🏋️ Workout base class (Common workout attributes)
+  - 🏃 CardioWorkout (Running, cycling, swimming tracking)
+  - 💪 StrengthWorkout (Weight training, reps, sets tracking)
+  
+  **Interface Implementation:**
+  - 📊 ITrackable interface (Track progress, log activities)
+  - 📝 Common tracking methods for all workout types
+  - 📈 Progress monitoring and analytics
+  
+  **Polymorphic Workout Tracking:**
+  - 🏃 CardioWorkout: Track distance, duration, calories burned
+  - 💪 StrengthWorkout: Track weight, reps, sets, muscle groups
+  - 🔄 Different tracking implementations per workout type
+  - 📉 Personalized fitness metrics and goals
 
+#### 🏋️ FitTrack OOP Concepts Practiced:
+  - 🔒 Encapsulation of user and workout data
+  - 🎭 Abstraction through base Workout class
+  - 🔄 Polymorphism with workout-specific tracking
+  - 🔗 Interface-based design with ITrackable
+  - 🏗️ Inheritance hierarchy (Workout → CardioWorkout, StrengthWorkout)
+  - 📊 Method overriding for workout-specific operations
+  - 🎯 Unified tracking interface for diverse workouts
+  - 📈 Health and fitness system design patterns
 
+### 📅 January 10th, 2026
+- 📊 **Sorting Algorithms - Concepts and Theory**
+- 📚 Studied comprehensive sorting algorithm concepts including:
+  
+  **Sorting Algorithm Fundamentals:**
+  - 🔄 Time complexity analysis (Best, Average, Worst case)
+  - 💾 Space complexity and memory usage
+  - ⚖️ Stable vs Unstable sorting algorithms
+  - 🔄 In-place vs Out-of-place sorting
+  - 🔁 Comparison-based vs Non-comparison sorting
+  
+  **Algorithm Categories:**
+  - 🔵 Simple Sorts: Bubble, Selection, Insertion
+  - 🟢 Efficient Sorts: Merge, Quick, Heap
+  - 🟡 Specialized Sorts: Counting, Radix, Bucket
+
+#### 📊 Sorting Concepts Learned:
+  - 🔄 Divide and Conquer strategy
+  - 🎯 Pivot selection techniques
+  - 📊 Heap data structure operations
+  - 🔢 Counting and distribution techniques
+  - ⏱️ Time complexity: O(n²), O(n log n), O(n)
+  - 💾 Space complexity optimization
+  - 🎯 Algorithm selection based on use case
+  - 📈 Performance trade-offs and analysis
+
+### 📅 January 11th, 2026
+- 📊 **Sorting Algorithm Problems in C#**
+- 💻 Implemented and solved comprehensive sorting problems including:
+  
+  **Simple Sorting Algorithms:**
+  - 🟦 Bubble Sort - Sort Student Marks
+    - Multiple pass traversal
+    - Adjacent element comparison and swapping
+    - Optimization with early termination
+  - 💼 Insertion Sort - Sort Employee IDs
+    - Sorted and unsorted partition management
+    - Element insertion at correct position
+    - Efficient for small datasets
+  - 📊 Selection Sort - Sort Exam Scores
+    - Minimum element selection
+    - Swap with first unsorted element
+    - Simple implementation pattern
+  
+  **Efficient Sorting Algorithms:**
+  - 📚 Merge Sort - Sort Book Prices
+    - Recursive divide and conquer
+    - Merge sorted halves
+    - Stable sorting with O(n log n)
+  - 🛒 Quick Sort - Sort Product Prices
+    - Pivot selection strategies
+    - Partitioning logic
+    - In-place sorting with O(n log n) average
+  - 💼 Heap Sort - Sort Job Applicant Salaries
+    - Max Heap construction
+    - Root extraction and reheapify
+    - In-place with O(n log n) guaranteed
+  
+  **Specialized Sorting Algorithms:**
+  - 🎓 Counting Sort - Sort Student Ages
+    - Frequency counting array
+    - Cumulative frequency calculation
+    - Non-comparison sorting with O(n+k)
+
+#### 📊 Sorting Algorithm Concepts Practiced:
+  - 🔄 Recursive and iterative implementations
+  - 🎯 Partitioning and merging techniques
+  - 📊 Heap operations (heapify, build heap)
+  - 🔢 Counting and distribution sorting
+  - ⏱️ Time complexity optimization
+  - 💾 Space complexity management
+  - 🎯 Algorithm selection for different scenarios
+  - 📈 Performance analysis and comparison
+
+### 📅 January 12th, 2026
+- ✂️ **Dynamic Programming - Rod Cutting Problems**
+- 💻 Solved optimization problems using dynamic programming including:
+  
+  **Story 1: Metal Factory Pipe Cutting**
+  - 🏭 Context: Maximize revenue from cutting metal rods
+  - 💵 Scenario A: Best cuts for 8-length rod with price chart
+    - Dynamic programming approach
+    - Optimal substructure identification
+    - Revenue maximization strategy
+  - 📝 Scenario B: Custom-length order impact
+    - Add new length to price chart
+    - Recalculate optimal cuts
+    - Revenue impact analysis
+  - 📉 Scenario C: Non-optimized strategy visualization
+    - Compare optimized vs non-optimized revenue
+    - Demonstrate DP benefits
+    - Loss calculation without optimization
+  
+  **Story 2: Custom Furniture Manufacturing**
+  - 🪨 Context: Carpenter cuts wooden rods for furniture
+  - 💰 Scenario A: Best cuts for 12ft rod
+    - Maximize earnings with size-based pricing
+    - Optimal cutting strategy
+    - Revenue calculation
+  - ⚠️ Scenario B: Fixed waste constraint
+    - Modify logic for waste limitation
+    - Constraint-based optimization
+    - Feasible solution finding
+  - ♻️ Scenario C: Revenue and minimal waste
+    - Dual optimization (revenue + waste)
+    - Trade-off analysis
+    - Balanced cutting strategy
+
+#### ✂️ Rod Cutting DP Concepts Practiced:
+  - 🧠 Dynamic programming fundamentals
+  - 📊 Optimal substructure property
+  - 🔄 Overlapping subproblems identification
+  - 💾 Memoization and tabulation techniques
+  - 🎯 Bottom-up vs top-down approaches
+  - 💰 Revenue maximization algorithms
+  - ⚠️ Constraint handling in optimization
+  - 📈 Trade-off analysis and multi-objective optimization
+
+- 💳 **LoanBuddy – Loan Approval Automation System**
+- 💻 Developed comprehensive fintech loan approval engine including:
+  
+  **LoanBuddy System Components:**
+  - 👤 Applicant class (name, creditScore, income, loanAmount)
+  - 📝 LoanApplication class (loan type, term, interest rate)
+  - 🏦 Different loan types (PersonalLoan, HomeLoan, AutoLoan)
+  - 📊 EMI calculation with standard formula
+  
+  **Interface Implementation:**
+  - 📝 IApprovable interface (approveLoan, calculateEMI methods)
+  - ✅ Loan approval logic based on credit score and income
+  - 💰 EMI calculation: P × R × (1+R)^N / ((1+R)^N – 1)
+  - 📅 Personalized repayment plan generation
+  
+  **Loan Approval Features:**
+  - 📊 Credit risk evaluation
+  - ✅ Eligibility verification
+  - 🚫 Approval/rejection based on custom rules
+  - 💵 Monthly EMI calculation
+  - 📈 Repayment schedule generation
+
+#### 💳 LoanBuddy OOP Concepts Practiced:
+  - 🔒 Encapsulation of credit score and approval logic
+  - 🏗️ Inheritance hierarchy (LoanApplication → HomeLoan, AutoLoan, PersonalLoan)
+  - 🔄 Polymorphism with loan-specific EMI calculations
+  - 🔗 Interface-based design with IApprovable
+  - 🔒 Access modifiers for internal process control
+  - 🎯 Constructor overloading for different loan types
+  - 💼 Real-world fintech business logic
+  - 📈 Financial calculation algorithms
+
+### 📅 January 13th, 2026
+- 🎬 **CinemaTime – Movie Schedule Manager**
+- 💻 Developed cinema showtime management system with exception handling:
+  
+  **CinemaTime System Features:**
+  - 📋 List<string> for movie titles and showtimes
+  - ➕ addMovie(String title, String time) method
+  - 🔍 searchMovie(String keyword) using String.Contains()
+  - 📊 displayAllMovies() with formatted output
+  - 🔄 List to array conversion for printable reports
+  
+  **Exception Handling:**
+  - ⚠️ IndexOutOfBoundsException for invalid search indices
+  - 🕐 InvalidTimeFormatException for improper time formats (e.g., "25:99")
+  - ✅ Input validation and error recovery
+  - 📝 Formatted string output using concatenation
+
+- 📚 **BookBuddy – Digital Bookshelf App**
+- 💻 Developed personal bookshelf management application:
+  
+  **BookBuddy System Features:**
+  - 📖 ArrayList for storing books in "Title - Author" format
+  - ➕ addBook(String title, String author) method
+  - 🔤 sortBooksAlphabetically() for alphabetical ordering
+  - 🔍 searchByAuthor(String author) method
+  - ✂️ String.Split() to separate title and author
+  - 🔄 ArrayList to array conversion for exporting
+  
+  **Exception Handling:**
+  - ⚠️ InvalidBookFormatException for incorrect format
+  - 📋 Empty list handling with try-catch
+  - ✅ Format validation and error messages
+
+#### 🎬 CinemaTime & BookBuddy Concepts Practiced:
+  - 📋 List and ArrayList operations
+  - 🔍 String searching and manipulation
+  - ⚠️ Custom exception creation and handling
+  - 🔄 Collection to array conversion
+  - ✅ Input validation patterns
+  - 📝 String formatting techniques
+  - 🎯 CRUD operations on collections
+  - 💾 Data structure selection and usage
+
+- 🛠️ **C# Best Practices - StringBuilder & StreamReader**
+- 📚 Mastered performance optimization and file handling techniques:
+  
+  **StringBuilder Best Practices:**
+  - 🔄 Use for multiple string manipulations in loops
+  - ⚡ Append() method over + concatenation
+  - 💾 Initialize with capacity to avoid resizing
+  - 🎯 Preferred for mutable strings in performance-critical code
+  
+  **StreamReader Best Practices:**
+  - 📄 Efficient text file reading
+  - 🔒 Always use using statement for disposal
+  - ⚠️ Handle IOException properly
+  - 🔤 Specify correct encoding for non-ASCII text
+  - 💾 Use BufferedStream for large files
+
+- 💻 **StringBuilder Problems Solved:**
+  - 🔄 Reverse a String Using StringBuilder
+  - 🗑️ Remove Duplicates from String (maintain order)
+  - ➕ Concatenate Strings Efficiently from array
+  - ⚡ Compare StringBuilder Performance vs string concatenation
+
+- 📄 **StreamReader Problems Solved:**
+  - 📖 Read File Line by Line
+  - 🔍 Count Word Occurrence in File
+  - 🔄 Convert Byte Stream to Character Stream
+  - ✍️ Read User Input and Write to File
+
+#### 🛠️ Best Practices Concepts Practiced:
+  - ⚡ Performance optimization techniques
+  - 💾 Memory management and efficiency
+  - 📄 File I/O operations
+  - 🔤 Encoding and character stream handling
+  - 🔒 Resource disposal patterns
+  - 🎯 Appropriate data structure selection
+  - 📊 Performance benchmarking
+  - ⚠️ Exception handling in file operations
+
+- 🔍 **Search Algorithms - Linear & Binary Search**
+- 💻 Solved comprehensive search algorithm problems including:
+  
+  **Linear Search Problems:**
+  - 🔢 Search for First Negative Number in array
+  - 📝 Search for Specific Word in List of Sentences
+  
+  **Binary Search Problems:**
+  - 🔄 Find Rotation Point in Rotated Sorted Array
+  - ⛰️ Find Peak Element in Array
+  - 📊 Search Target Value in 2D Sorted Matrix
+  - 🎯 Find First and Last Occurrence in Sorted Array
+  
+  **Challenge Problem:**
+  - 🔢 Find First Missing Positive Integer (Linear Search)
+  - 🎯 Find Target Index in Sorted Array (Binary Search)
+  - 🔄 Combined approach with negative marking
+  - 📊 Array sorting and binary search integration
+
+#### 🔍 Search Algorithm Concepts Practiced:
+  - 🔄 Linear search for unsorted data
+  - ⚡ Binary search for sorted data
+  - 📊 Time complexity: O(n) vs O(log n)
+  - 🎯 Search space reduction techniques
+  - 🔢 Array manipulation and marking
+  - 📈 2D matrix search strategies
+  - 🔄 Rotated array handling
+  - ⛰️ Peak finding algorithms
+  - 🎯 First/last occurrence identification
+  - 💾 Space-time trade-offs in search algorithms
 
