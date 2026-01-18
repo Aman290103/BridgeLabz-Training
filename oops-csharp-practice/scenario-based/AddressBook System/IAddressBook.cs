@@ -10,5 +10,8 @@ namespace BridgeLabzTraining.AddressBook_System
     {
         public void AddContact();
         public void EditContact();
+        
+        //------uc4-------------//
+        public void DeleteContact();
 	}
 }

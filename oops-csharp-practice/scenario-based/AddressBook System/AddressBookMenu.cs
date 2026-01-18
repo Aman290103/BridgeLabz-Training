@@ -21,7 +21,8 @@ namespace BridgeLabzTraining.AddressBook_System
 				{
 					Console.WriteLine("\n1. Add Contact");
 					Console.WriteLine("2. Edit Contact");
-					Console.WriteLine("3. Exit");
+					Console.WriteLine("3. Delete Contact");
+					Console.WriteLine("4. Exit");
 
 					int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -36,7 +37,11 @@ namespace BridgeLabzTraining.AddressBook_System
 							break;
 
 					case 3:
-							return;
+							addressBook.DeleteContact();
+						break;
+
+					case 4:
+						return;
 					}
 				}
 			}

@@ -90,6 +90,41 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.WriteLine("Contact not found!");
 		}
 
+		//-----------------------UC - 4-----------------------------//
+
+		public void DeleteContact()
+		{
+			if (Contactcount == 0)
+			{
+				Console.WriteLine("No contacts available to delete.");
+				return;
+			}
+
+			Console.Write("Enter First Name to delete: ");
+			string firstName = Console.ReadLine();
+
+			for (int i = 0; i < Contactcount; i++)
+			{
+				if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
+				{
+					// Shift contacts to left
+					for (int j = i; j < Contactcount - 1; j++)
+					{
+						contacts[j] = contacts[j + 1];
+					}
+
+					contacts[Contactcount - 1] = null;
+					Contactcount--;
+
+					Console.WriteLine("Contact deleted successfully!");
+					return;
+				}
+			}
+
+			Console.WriteLine("Contact not found!");
+		}
+
+
 
 
 
