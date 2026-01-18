@@ -12,7 +12,7 @@ namespace BridgeLabzTraining.AddressBook_System
 		private ContactPerson[] contacts = new ContactPerson[100];
 		int Contactcount = 0;
 
-		//-----------------------UC 1 + UC 2--------------------------------//
+		//-----------------------UC 1 + UC 2 + UC 5--------------------------------//
 		public void AddContact()
 		{
 			if (Contactcount >= contacts.Length)
