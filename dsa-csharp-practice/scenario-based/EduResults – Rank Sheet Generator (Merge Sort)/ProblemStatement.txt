@@ -1,0 +1,9 @@
+EduResults – Rank Sheet Generator (Merge Sort)
+Story: An educational board compiles marks of thousands of students from different districts.
+Each district submits a sorted list of students by score. The main server needs to merge and
+sort all these lists into a final state-wise rank list. Merge Sort ensures efficiency and maintains
+stability for duplicate scores.
+Concepts Involved:
+● Merge Sort
+● Merging sorted sublists
+● Large datasets with stable sorting
