@@ -1,0 +1,11 @@
+Dynamic Online Marketplace
+o Concepts: Type Parameters, Generic Methods, Constraints
+o Problem Statement: Build a generic product catalog for an online
+marketplace supporting various product types.
+o Hints:
+ Define a generic class Product&lt;T&gt; where T is restricted to a
+category (BookCategory, ClothingCategory).
+ Implement a generic method void ApplyDiscount&lt;T&gt;(T
+product, double percentage) where T : Product.
+ Ensure type safety while allowing multiple product
+categories in the catalog.
