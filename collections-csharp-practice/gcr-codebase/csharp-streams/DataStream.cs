@@ -7,7 +7,7 @@ class DataStreams{
             // WRITE DATA
             using (BinaryWriter writer =new BinaryWriter(File.Open(filePath, FileMode.Create))){
                 writer.Write(1);
-                writer.Write("Lavanya");
+                writer.Write("Aman");
                 writer.Write(8.39);
             }
             Console.WriteLine("Data written.\n");
