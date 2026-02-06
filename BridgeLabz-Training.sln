@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "review", "review", "{3AF3C6C5-49A4-9431-9BED-3179A0F4DD13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "review", "review", "{2D11A3CC-5460-F68E-60FE-187EB2C5E744}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "railway-registration-system", "railway-registration-system", "{6810D358-55FF-9E43-7008-FF0FF966FC3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "railway-registration-system", "review\review\railway-registration-system\railway-registration-system\railway-registration-system.csproj", "{2982C94A-0DD4-745B-042C-983C2D08E32B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2982C94A-0DD4-745B-042C-983C2D08E32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2982C94A-0DD4-745B-042C-983C2D08E32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2982C94A-0DD4-745B-042C-983C2D08E32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2982C94A-0DD4-745B-042C-983C2D08E32B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D11A3CC-5460-F68E-60FE-187EB2C5E744} = {3AF3C6C5-49A4-9431-9BED-3179A0F4DD13}
+		{6810D358-55FF-9E43-7008-FF0FF966FC3F} = {2D11A3CC-5460-F68E-60FE-187EB2C5E744}
+		{2982C94A-0DD4-745B-042C-983C2D08E32B} = {6810D358-55FF-9E43-7008-FF0FF966FC3F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {338388FD-E0DB-418D-AB94-FD3D28A689B8}
+	EndGlobalSection
+EndGlobal
