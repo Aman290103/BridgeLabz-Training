@@ -13,5 +13,8 @@ namespace BridgeLabzTraining.AddressBook_System
         
         //------uc4-------------//
         public void DeleteContact();
+
+        //----------uc-8---------//
+		public void SearchPersonByCityOrState();
 	}
 }

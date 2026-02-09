@@ -57,13 +57,12 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.Write("Enter Email      : ");
 			person.Email = Console.ReadLine();
 
-			 //  UC-6: Manual duplicate check (field comparison)
+			// ---------------- UC6 (Duplicate Check) ----------------
 			for (int i = 0; i < book.ContactCount; i++)
 			{
-				if (book.Contacts[i].FirstName.Equals(person.FirstName, StringComparison.OrdinalIgnoreCase) &&
-					book.Contacts[i].LastName.Equals(person.LastName, StringComparison.OrdinalIgnoreCase))
+				if (book.Contacts[i].Equals(person))
 				{
-					Console.WriteLine("Duplicate Contact! Not Added.");
+					Console.WriteLine("Duplicate Contact! Person already exists in this Address Book.");
 					return;
 				}
 			}
@@ -154,6 +153,40 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.WriteLine("Contact not found!");
 		}
 
+		// ----------------------- UC8 -----------------------
+		// Search contacts across all Address Books by City or State
+		public void SearchPersonByCityOrState()
+		{
+			Console.Write("Enter City or State to search: ");
+			string place = Console.ReadLine();
+
+			bool found = false;
+
+			// Loop through all Address Books
+			for (int b = 0; b < bookCount; b++)
+			{
+				AddressBook book = addressBooks[b];
+
+				// Loop through contacts in each Address Book
+				for (int i = 0; i < book.ContactCount; i++)
+				{
+					ContactPerson person = book.Contacts[i];
+
+					if (person.City.Equals(place, StringComparison.OrdinalIgnoreCase) ||
+						person.State.Equals(place, StringComparison.OrdinalIgnoreCase))
+					{
+						Console.WriteLine($"Found in Address Book: {book.BookName}");
+						Console.WriteLine(person);
+						found = true;
+					}
+				}
+			}
+
+			if (!found)
+			{
+				Console.WriteLine("No persons found in the given City or State.");
+			}
+		}
 
 
 

@@ -32,6 +32,23 @@ namespace BridgeLabzTraining.AddressBook_System
 			return $"Name : {FirstName} {LastName}, Address : {Address}, {City}, {State}, {Zip}, Phone Number : {PhoneNumber}, Email : {Email}";
 		}
 
+		// UC7: Override Equals() to define object equality
+		public override bool Equals(object obj)
+		{
+		if (obj is ContactPerson other)
+		{
+			return this.FirstName.Equals(other.FirstName, StringComparison.OrdinalIgnoreCase)
+				&& this.LastName.Equals(other.LastName, StringComparison.OrdinalIgnoreCase);
+		}
+		return false;
+		}
+
+		// Required when Equals is overridden
+		public override int GetHashCode()
+		{
+		return (FirstName + LastName).ToLower().GetHashCode();
+		}	
+
 		
 	}
 }
