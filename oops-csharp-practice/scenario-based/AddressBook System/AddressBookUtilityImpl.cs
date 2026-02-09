@@ -57,12 +57,13 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.Write("Enter Email      : ");
 			person.Email = Console.ReadLine();
 
-			// ---------------- UC6 (Duplicate Check) ----------------
+			 //  UC-6: Manual duplicate check (field comparison)
 			for (int i = 0; i < book.ContactCount; i++)
 			{
-				if (book.Contacts[i].Equals(person))
+				if (book.Contacts[i].FirstName.Equals(person.FirstName, StringComparison.OrdinalIgnoreCase) &&
+					book.Contacts[i].LastName.Equals(person.LastName, StringComparison.OrdinalIgnoreCase))
 				{
-					Console.WriteLine("Duplicate Contact! Person already exists in this Address Book.");
+					Console.WriteLine("Duplicate Contact! Not Added.");
 					return;
 				}
 			}
