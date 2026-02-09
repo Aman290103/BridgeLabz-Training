@@ -6,20 +6,38 @@ using System.Threading.Tasks;
 
 namespace BridgeLabzTraining.AddressBook_System
 {
-    public class AddressBookUtilityImpl : IAddressBook
+	public class AddressBookUtilityImpl : IAddressBook
 	{
-		
-		private ContactPerson[] contacts = new ContactPerson[100];
-		int Contactcount = 0;
 
-		//-----------------------UC 1 + UC 2 + UC 5--------------------------------//
+		private AddressBook[] addressBooks = new AddressBook[10];
+		private int bookCount = 0;
+
+
+		private AddressBook GetOrCreateBook()
+		{
+			Console.Write("Enter Address Book Name: ");
+			string name = Console.ReadLine();
+
+			for (int i = 0; i < bookCount; i++)
+			{
+				if (addressBooks[i].BookName.Equals(name, StringComparison.OrdinalIgnoreCase))
+					return addressBooks[i];
+			}
+
+			AddressBook newBook = new AddressBook();
+			newBook.BookName = name;
+			addressBooks[bookCount++] = newBook;
+
+			Console.WriteLine("New Address Book Created!");
+			return newBook;
+		}
+
+
+		//-----------------------updated uc-5 method--------------------------------//
 		public void AddContact()
 		{
-			if (Contactcount >= contacts.Length)
-			{
-				Console.WriteLine("Address Book is Full!");
-				return;
-			}
+			AddressBook book = GetOrCreateBook();
+
 			ContactPerson person = new ContactPerson();
 
 			Console.Write("Enter First Name : ");
@@ -38,49 +56,52 @@ namespace BridgeLabzTraining.AddressBook_System
 			person.PhoneNumber = Console.ReadLine();
 			Console.Write("Enter Email      : ");
 			person.Email = Console.ReadLine();
-			contacts[Contactcount] = person;
-			Contactcount++;
-			Console.WriteLine("\nContact Added Successfully!");
+
+			book.AddContact(person);
+			Console.WriteLine("Contact Added Successfully!");
 		}
 
 		//-----------------------UC - 3-----------------------------//
 
+		// ----------------------- UC 3 (UPDATED FOR UC5 STRUCTURE) -----------------------
 		public void EditContact()
 		{
-			if (Contactcount == 0)
+			// Select which Address Book to work on
+			AddressBook book = GetOrCreateBook();
+
+			if (book.ContactCount == 0)
 			{
 				Console.WriteLine("No contacts available to edit.");
 				return;
 			}
 
-			Console.WriteLine("Enter First Name to edit: ");
+			Console.Write("Enter First Name to edit: ");
 			string firstName = Console.ReadLine();
 
-
-			for (int i = 0; i < Contactcount; i++)
+			for (int i = 0; i < book.ContactCount; i++)
 			{
-				if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
-	            { 
+				if (book.Contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
+				{
 					Console.WriteLine("\nEditing Contact: ");
-					Console.WriteLine(contacts[i]);
+					Console.WriteLine(book.Contacts[i]);
 
 					Console.Write("Enter New Address: ");
-					contacts[i].Address = Console.ReadLine();
+					book.Contacts[i].Address = Console.ReadLine();
 
 					Console.Write("Enter New City: ");
-					contacts[i].City = Console.ReadLine();
+					book.Contacts[i].City = Console.ReadLine();
 
 					Console.Write("Enter New State: ");
-					contacts[i].State = Console.ReadLine();
+					book.Contacts[i].State = Console.ReadLine();
 
 					Console.Write("Enter New Zip: ");
-					contacts[i].Zip = Console.ReadLine();
+					book.Contacts[i].Zip = Console.ReadLine();
 
 					Console.Write("Enter New Phone Number: ");
-					contacts[i].PhoneNumber = Console.ReadLine();
+					book.Contacts[i].PhoneNumber = Console.ReadLine();
 
 					Console.Write("Enter New Email: ");
-					contacts[i].Email = Console.ReadLine();
+					book.Contacts[i].Email = Console.ReadLine();
 
 					Console.WriteLine("\nContact updated successfully!");
 					return;
@@ -90,11 +111,15 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.WriteLine("Contact not found!");
 		}
 
+
 		//-----------------------UC - 4-----------------------------//
 
 		public void DeleteContact()
 		{
-			if (Contactcount == 0)
+			// Select Address Book first
+			AddressBook book = GetOrCreateBook();
+
+			if (book.ContactCount == 0)
 			{
 				Console.WriteLine("No contacts available to delete.");
 				return;
@@ -103,18 +128,12 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.Write("Enter First Name to delete: ");
 			string firstName = Console.ReadLine();
 
-			for (int i = 0; i < Contactcount; i++)
+			for (int i = 0; i < book.ContactCount; i++)
 			{
-				if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
+				if (book.Contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
 				{
-					// Shift contacts to left
-					for (int j = i; j < Contactcount - 1; j++)
-					{
-						contacts[j] = contacts[j + 1];
-					}
-
-					contacts[Contactcount - 1] = null;
-					Contactcount--;
+					// Use method from AddressBook class
+					book.RemoveContactAt(i);
 
 					Console.WriteLine("Contact deleted successfully!");
 					return;

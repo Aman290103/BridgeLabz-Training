@@ -7,45 +7,45 @@ using System.Threading.Tasks;
 namespace BridgeLabzTraining.AddressBook_System
 {
 	sealed class AddressBookMenu
+	{
+		private IAddressBook addressBook;
+
+		public AddressBookMenu()
 		{
-			private IAddressBook addressBook;
+			addressBook = new AddressBookUtilityImpl();
+		}
 
-			public AddressBookMenu()
+		public void ShowMenu()
+		{
+			while (true)
 			{
-				addressBook = new AddressBookUtilityImpl();
-			}
+				Console.WriteLine("\n1. Add Contact");
+				Console.WriteLine("2. Edit Contact");
+				Console.WriteLine("3. Delete Contact");
+				Console.WriteLine("4. Exit");
 
-			public void ShowMenu()
-			{
-				while (true)
+				int choice = Convert.ToInt32(Console.ReadLine());
+
+				switch (choice)
 				{
-					Console.WriteLine("\n1. Add Contact");
-					Console.WriteLine("2. Edit Contact");
-					Console.WriteLine("3. Delete Contact");
-					Console.WriteLine("4. Exit");
+					case 1:
+						addressBook.AddContact();
+						break;
 
-					int choice = Convert.ToInt32(Console.ReadLine());
-
-					switch (choice)
-					{
-						case 1:
-							addressBook.AddContact();  
-							break;
-
-					case 2 : 
-							addressBook.EditContact();
-							break;
+					case 2:
+						addressBook.EditContact();
+						break;
 
 					case 3:
-							addressBook.DeleteContact();
+						addressBook.DeleteContact();
 						break;
 
 					case 4:
 						return;
-					}
 				}
 			}
-			
+		}
+
 	}
 }
 
