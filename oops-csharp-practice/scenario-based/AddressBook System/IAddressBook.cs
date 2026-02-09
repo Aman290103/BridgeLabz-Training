@@ -20,5 +20,8 @@ namespace BridgeLabzTraining.AddressBook_System
         //----------uc-9----------//
 		void ViewPersonsByCityOrState();
 
+        //----------uc-10----------//
+        public void CountPersonsByCityOrState();
 	}
+
 }

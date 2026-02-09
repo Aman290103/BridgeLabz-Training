@@ -24,7 +24,9 @@ namespace BridgeLabzTraining.AddressBook_System
 				Console.WriteLine("3. Delete Contact");
 				Console.WriteLine("4. Search Person by City or State");
 				Console.WriteLine("5. View Persons by City or State");
-				Console.WriteLine("6. Exit");
+				Console.WriteLine("6. Count Contacts by City or State");
+
+				Console.WriteLine("7. Exit");
 
 				int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -54,6 +56,9 @@ namespace BridgeLabzTraining.AddressBook_System
 						break;
 
 					case 6:
+    						addressBook.CountPersonsByCityOrState();
+						break;	
+					case 7:
 						Console.WriteLine("Exiting Address Book System...");
 						return;
 				}

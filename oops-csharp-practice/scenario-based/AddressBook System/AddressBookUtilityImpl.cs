@@ -279,5 +279,39 @@ namespace BridgeLabzTraining.AddressBook_System
 				Console.WriteLine("Invalid choice.");
 			}
 		}
+
+		// ----------------------- UC10 -----------------------
+		// Count number of persons in a given City or State
+		public void CountPersonsByCityOrState()
+		{
+		Console.Write("Enter City or State to count persons: ");
+		string place = Console.ReadLine();
+
+		int totalCount = 0;
+
+		// Check in City list
+		for (int i = 0; i < cityCount; i++)
+		{
+			if (cityList[i].Equals(place, StringComparison.OrdinalIgnoreCase))
+			{
+				totalCount += cityPersonCount[i];
+			}
+		}
+
+		// Check in State list
+		for (int i = 0; i < stateCount; i++)
+		{
+			if (stateList[i].Equals(place, StringComparison.OrdinalIgnoreCase))
+			{
+				totalCount += statePersonCount[i];
+			}
+		}
+
+		if (totalCount > 0)
+			Console.WriteLine($"Number of contacts in {place}: {totalCount}");
+		else
+			Console.WriteLine("No contacts found for the given City or State.");
+		}
+
 	}
 }
