@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "collections-csharp-practice", "collections-csharp-practice", "{B74F3C35-59E8-51DC-66E2-E46BE919468F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gcr-codebase", "gcr-codebase", "{255FAFDC-F1EC-4880-7D21-15A4A1D77069}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-regex-nunit", "csharp-regex-nunit", "{2FB655E3-FB05-F6F2-2C5B-1A1D5E9C2963}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-nunit", "csharp-nunit", "{3DB0ECED-B0B4-8293-8213-9CB34EEE155E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingPractice", "collections-csharp-practice\gcr-codebase\csharp-regex-nunit\csharp-nunit\UnitTestingPractice\UnitTestingPractice.csproj", "{080E8B73-63FB-F77D-0E37-F4D803880675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingPractice.MSTests", "collections-csharp-practice\gcr-codebase\csharp-regex-nunit\csharp-nunit\UnitTestingPractice.MSTests\UnitTestingPractice.MSTests.csproj", "{299AD09F-50A4-66AC-94FE-2A46471C4535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingPractice.NUnitTests", "collections-csharp-practice\gcr-codebase\csharp-regex-nunit\csharp-nunit\UnitTestingPractice.NUnitTests\UnitTestingPractice.NUnitTests.csproj", "{A35AA4F5-41F4-5E11-8F1A-1EE5667FD0B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{080E8B73-63FB-F77D-0E37-F4D803880675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080E8B73-63FB-F77D-0E37-F4D803880675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080E8B73-63FB-F77D-0E37-F4D803880675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080E8B73-63FB-F77D-0E37-F4D803880675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299AD09F-50A4-66AC-94FE-2A46471C4535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299AD09F-50A4-66AC-94FE-2A46471C4535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299AD09F-50A4-66AC-94FE-2A46471C4535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299AD09F-50A4-66AC-94FE-2A46471C4535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A35AA4F5-41F4-5E11-8F1A-1EE5667FD0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35AA4F5-41F4-5E11-8F1A-1EE5667FD0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A35AA4F5-41F4-5E11-8F1A-1EE5667FD0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A35AA4F5-41F4-5E11-8F1A-1EE5667FD0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{255FAFDC-F1EC-4880-7D21-15A4A1D77069} = {B74F3C35-59E8-51DC-66E2-E46BE919468F}
+		{2FB655E3-FB05-F6F2-2C5B-1A1D5E9C2963} = {255FAFDC-F1EC-4880-7D21-15A4A1D77069}
+		{3DB0ECED-B0B4-8293-8213-9CB34EEE155E} = {2FB655E3-FB05-F6F2-2C5B-1A1D5E9C2963}
+		{080E8B73-63FB-F77D-0E37-F4D803880675} = {3DB0ECED-B0B4-8293-8213-9CB34EEE155E}
+		{299AD09F-50A4-66AC-94FE-2A46471C4535} = {3DB0ECED-B0B4-8293-8213-9CB34EEE155E}
+		{A35AA4F5-41F4-5E11-8F1A-1EE5667FD0B5} = {3DB0ECED-B0B4-8293-8213-9CB34EEE155E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FA45F88-F8CD-405F-8E12-1D4952984747}
+	EndGlobalSection
+EndGlobal
