@@ -23,7 +23,8 @@ namespace BridgeLabzTraining.AddressBook_System
 				Console.WriteLine("2. Edit Contact");
 				Console.WriteLine("3. Delete Contact");
 				Console.WriteLine("4. Search Person by City or State");
-				Console.WriteLine("5. Exit");
+				Console.WriteLine("5. View Persons by City or State");
+				Console.WriteLine("6. Exit");
 
 				int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -41,12 +42,18 @@ namespace BridgeLabzTraining.AddressBook_System
 						addressBook.DeleteContact();
 						break;
 
-						//-------------uc -8-----------//
+						//-------------uc - 8-----------//
 					case 4:
 						addressBook.SearchPersonByCityOrState();
 						break;
 
+						//------------UC -9----------------//
+
 					case 5:
+						addressBook.ViewPersonsByCityOrState();
+						break;
+
+					case 6:
 						Console.WriteLine("Exiting Address Book System...");
 						return;
 				}

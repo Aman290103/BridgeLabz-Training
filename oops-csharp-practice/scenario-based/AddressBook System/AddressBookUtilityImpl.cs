@@ -12,6 +12,20 @@ namespace BridgeLabzTraining.AddressBook_System
 		private AddressBook[] addressBooks = new AddressBook[10];
 		private int bookCount = 0;
 
+		// ---------- UC9 (Simulating Dictionary) ----------//
+
+		// City-wise storage
+		private string[] cityList = new string[100];
+		private ContactPerson[][] cityPersons = new ContactPerson[100][];
+		private int[] cityPersonCount = new int[100];
+		private int cityCount = 0;
+
+		// State-wise storage
+		private string[] stateList = new string[100];
+		private ContactPerson[][] statePersons = new ContactPerson[100][];
+		private int[] statePersonCount = new int[100];
+		private int stateCount = 0;
+
 
 		private AddressBook GetOrCreateBook()
 		{
@@ -68,6 +82,50 @@ namespace BridgeLabzTraining.AddressBook_System
 			}
 
 			book.AddContact(person);
+
+			// ---------------- UC9: Add person to City mapping ----------------
+			int cityIndex = -1;
+			for (int i = 0; i < cityCount; i++)
+			{
+				if (cityList[i].Equals(person.City, StringComparison.OrdinalIgnoreCase))
+				{
+					cityIndex = i;
+					break;
+				}
+			}
+
+			if (cityIndex == -1)
+			{
+				cityIndex = cityCount;
+				cityList[cityCount] = person.City;
+				cityPersons[cityCount] = new ContactPerson[100];
+				cityCount++;
+			}
+
+			cityPersons[cityIndex][cityPersonCount[cityIndex]++] = person;
+
+
+			// ---------------- UC9: Add person to State mapping ----------------
+			int stateIndex = -1;
+			for (int i = 0; i < stateCount; i++)
+			{
+				if (stateList[i].Equals(person.State, StringComparison.OrdinalIgnoreCase))
+				{
+					stateIndex = i;
+					break;
+				}
+			}
+
+			if (stateIndex == -1)
+			{
+				stateIndex = stateCount;
+				stateList[stateCount] = person.State;
+				statePersons[stateCount] = new ContactPerson[100];
+				stateCount++;
+			}
+
+			statePersons[stateIndex][statePersonCount[stateIndex]++] = person;
+
 			Console.WriteLine("Contact Added Successfully!");
 		}
 
@@ -188,8 +246,38 @@ namespace BridgeLabzTraining.AddressBook_System
 			}
 		}
 
+		// ----------------------- UC9 -----------------------
+		public void ViewPersonsByCityOrState()
+		{
+			Console.Write("View by (1) City or (2) State? ");
+			int choice = int.Parse(Console.ReadLine());
 
-
-
+			if (choice == 1)
+			{
+				for (int i = 0; i < cityCount; i++)
+				{
+					Console.WriteLine($"\nCity: {cityList[i]}");
+					for (int j = 0; j < cityPersonCount[i]; j++)
+					{
+						Console.WriteLine(cityPersons[i][j]);
+					}
+				}
+			}
+			else if (choice == 2)
+			{
+				for (int i = 0; i < stateCount; i++)
+				{
+					Console.WriteLine($"\nState: {stateList[i]}");
+					for (int j = 0; j < statePersonCount[i]; j++)
+					{
+						Console.WriteLine(statePersons[i][j]);
+					}
+				}
+			}
+			else
+			{
+				Console.WriteLine("Invalid choice.");
+			}
+		}
 	}
 }
