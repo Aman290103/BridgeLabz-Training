@@ -32,22 +32,6 @@ namespace BridgeLabzTraining.AddressBook_System
 			return $"Name : {FirstName} {LastName}, Address : {Address}, {City}, {State}, {Zip}, Phone Number : {PhoneNumber}, Email : {Email}";
 		}
 
-		// ---------------- UC6: Override Equals ----------------
-// Two persons are equal if First Name and Last Name are same
-		public override bool Equals(object obj)
-		{
-			if (obj is ContactPerson other)
-			{
-				return this.FirstName.Equals(other.FirstName, StringComparison.OrdinalIgnoreCase)
-					&& this.LastName.Equals(other.LastName, StringComparison.OrdinalIgnoreCase);
-			}
-			return false;
-		}
-
-		// Must override GetHashCode when Equals is overridden
-		public override int GetHashCode()
-		{
-			return (FirstName + LastName).ToLower().GetHashCode();
-		}
+		
 	}
 }
