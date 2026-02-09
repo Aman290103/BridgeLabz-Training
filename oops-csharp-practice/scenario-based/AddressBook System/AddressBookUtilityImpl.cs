@@ -313,5 +313,61 @@ namespace BridgeLabzTraining.AddressBook_System
 			Console.WriteLine("No contacts found for the given City or State.");
 		}
 
+		// ----------------------- UC11 -----------------------
+		// Sort contacts in a selected Address Book alphabetically by First Name
+		public void SortContactsByName()
+		{
+		// Ask which Address Book to sort
+		AddressBook book = GetOrCreateBook();
+
+		if (book.ContactCount == 0)
+		{
+			Console.WriteLine("No contacts to sort in this Address Book.");
+			return;
+		}
+
+		// Bubble Sort based on First Name
+		for (int i = 0; i < book.ContactCount - 1; i++)
+		{
+			for (int j = 0; j < book.ContactCount - i - 1; j++)
+			{
+				int compare = string.Compare(
+				book.Contacts[j].FirstName,
+				book.Contacts[j + 1].FirstName,
+				StringComparison.OrdinalIgnoreCase
+				);
+
+				// If first name is greater, swap
+				if (compare > 0)
+				{
+				ContactPerson temp = book.Contacts[j];
+				book.Contacts[j] = book.Contacts[j + 1];
+				book.Contacts[j + 1] = temp;
+				}
+				// If first names are equal, compare last names
+				else if (compare == 0)
+				{
+				if (string.Compare(book.Contacts[j].LastName,
+							book.Contacts[j + 1].LastName,
+							StringComparison.OrdinalIgnoreCase) > 0)
+				{
+					ContactPerson temp = book.Contacts[j];
+					book.Contacts[j] = book.Contacts[j + 1];
+					book.Contacts[j + 1] = temp;
+				}
+				}
+			}
+		}
+
+		Console.WriteLine("\nContacts Sorted Alphabetically:\n");
+
+		// Display sorted contacts
+		for (int i = 0; i < book.ContactCount; i++)
+		{
+			Console.WriteLine(book.Contacts[i]);
+		}
+		}
+
+
 	}
 }

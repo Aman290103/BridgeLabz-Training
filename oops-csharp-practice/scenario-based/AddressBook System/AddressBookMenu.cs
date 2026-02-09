@@ -25,8 +25,9 @@ namespace BridgeLabzTraining.AddressBook_System
 				Console.WriteLine("4. Search Person by City or State");
 				Console.WriteLine("5. View Persons by City or State");
 				Console.WriteLine("6. Count Contacts by City or State");
+				Console.WriteLine("7. Sort Contacts Alphabetically");
 
-				Console.WriteLine("7. Exit");
+				Console.WriteLine("8. Exit");
 
 				int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -57,8 +58,12 @@ namespace BridgeLabzTraining.AddressBook_System
 
 					case 6:
     						addressBook.CountPersonsByCityOrState();
-						break;	
+						break;
+
 					case 7:
+    						addressBook.SortContactsByName();
+    						break;		
+					case 8:
 						Console.WriteLine("Exiting Address Book System...");
 						return;
 				}
