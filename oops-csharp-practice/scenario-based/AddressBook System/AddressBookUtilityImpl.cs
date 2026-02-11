@@ -368,6 +368,105 @@ namespace BridgeLabzTraining.AddressBook_System
 		}
 		}
 
+		// ---------------- UC12: Sort by City ----------------//
+		public void SortByCity()
+		{
+		AddressBook book = GetOrCreateBook();
+
+		if (book.ContactCount == 0)
+		{
+			Console.WriteLine("No contacts to sort.");
+			return;
+		}
+
+		// Bubble Sort by City
+		for (int i = 0; i < book.ContactCount - 1; i++)
+		{
+			for (int j = 0; j < book.ContactCount - i - 1; j++)
+			{
+				if (string.Compare(book.Contacts[j].City,
+							book.Contacts[j + 1].City,
+							StringComparison.OrdinalIgnoreCase) > 0)
+				{
+				ContactPerson temp = book.Contacts[j];
+				book.Contacts[j] = book.Contacts[j + 1];
+				book.Contacts[j + 1] = temp;
+				}
+			}
+		}
+
+		Console.WriteLine("\nContacts Sorted by City:\n");
+		for (int i = 0; i < book.ContactCount; i++)
+			Console.WriteLine(book.Contacts[i]);
+		}
+
+		// ---------------- UC12: Sort by State ----------------//
+		public void SortByState()
+		{
+		AddressBook book = GetOrCreateBook();
+
+		if (book.ContactCount == 0)
+		{
+			Console.WriteLine("No contacts to sort.");
+			return;
+		}
+
+		// Bubble Sort by State
+		for (int i = 0; i < book.ContactCount - 1; i++)
+		{
+			for (int j = 0; j < book.ContactCount - i - 1; j++)
+			{
+				if (string.Compare(book.Contacts[j].State,
+							book.Contacts[j + 1].State,
+							StringComparison.OrdinalIgnoreCase) > 0)
+				{
+				ContactPerson temp = book.Contacts[j];
+				book.Contacts[j] = book.Contacts[j + 1];
+				book.Contacts[j + 1] = temp;
+				}
+			}
+		}
+
+		Console.WriteLine("\nContacts Sorted by State:\n");
+		for (int i = 0; i < book.ContactCount; i++)
+			Console.WriteLine(book.Contacts[i]);
+		}
+
+		// ---------------- UC12: Sort by Zip ----------------
+		public void SortByZip()
+		{
+		AddressBook book = GetOrCreateBook();
+
+		if (book.ContactCount == 0)
+		{
+			Console.WriteLine("No contacts to sort.");
+			return;
+		}
+
+		// Bubble Sort by Zip
+		for (int i = 0; i < book.ContactCount - 1; i++)
+		{
+			for (int j = 0; j < book.ContactCount - i - 1; j++)
+			{
+				if (string.Compare(book.Contacts[j].Zip,
+							book.Contacts[j + 1].Zip,
+							StringComparison.OrdinalIgnoreCase) > 0)
+				{
+				ContactPerson temp = book.Contacts[j];
+				book.Contacts[j] = book.Contacts[j + 1];
+				book.Contacts[j + 1] = temp;
+				}
+			}
+		}
+
+		Console.WriteLine("\nContacts Sorted by Zip:\n");
+		for (int i = 0; i < book.ContactCount; i++)
+			Console.WriteLine(book.Contacts[i]);
+		}
+
+
+
+
 
 	}
 }

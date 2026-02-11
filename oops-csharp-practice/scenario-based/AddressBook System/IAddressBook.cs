@@ -25,6 +25,12 @@ namespace BridgeLabzTraining.AddressBook_System
 
         //----------UC11-----------------//
         public void SortContactsByName();
+
+        //----------UC12-----------------//
+        public void SortByCity();
+        public void SortByState();
+        public void SortByZip();
+
 	}
 
 }
