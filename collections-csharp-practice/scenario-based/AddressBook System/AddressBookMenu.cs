@@ -29,9 +29,14 @@ namespace BridgeLabzTraining.AddressBook_System
 				Console.WriteLine("8. Sort Contacts by City");
 				Console.WriteLine("9. Sort Contacts by State");
 				Console.WriteLine("10. Sort Contacts by Zip");
+				Console.WriteLine("11. Save Contacts to File");
+				Console.WriteLine("12. Load Contacts from File");
+				Console.WriteLine("13. Write Contacts to CSV");
+				Console.WriteLine("14. Read Contacts from CSV");
 
 
-				Console.WriteLine("11. Exit");
+
+				Console.WriteLine("15. Exit");
 
 				int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -81,7 +86,25 @@ namespace BridgeLabzTraining.AddressBook_System
 						addressBook.SortByZip();
 						break;
 
+					//----------UC13-----------------//
 					case 11:
+						addressBook.SaveToFile();
+						break;
+
+					case 12:
+						addressBook.LoadFromFile();
+						break;
+
+					//----------UC14-----------------//
+					case 13:
+						addressBook.WriteToCsv();
+						break;
+
+					case 14:
+						addressBook.ReadFromCsv();	
+						break;
+
+					case 15:
 						Console.WriteLine("Exiting...");
 						return;
 

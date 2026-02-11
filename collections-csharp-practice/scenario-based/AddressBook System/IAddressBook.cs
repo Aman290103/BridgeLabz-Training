@@ -31,6 +31,16 @@ namespace BridgeLabzTraining.AddressBook_System
         public void SortByState();
         public void SortByZip();
 
+        //----------UC13-----------------//
+        public void SaveToFile();
+        public void LoadFromFile();
+
+        //----------UC14-----------------//
+        public void WriteToCsv();
+        public void ReadFromCsv();
+
+
+
 	}
 
 }

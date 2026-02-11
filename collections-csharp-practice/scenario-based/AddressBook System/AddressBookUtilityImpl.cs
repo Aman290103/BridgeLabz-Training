@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
+
 
 namespace BridgeLabzTraining.AddressBook_System
 {
     public class AddressBookUtilityImpl : IAddressBook
     {
+
+        private string filePath = "AddressBookData.txt";
+
         // UC5 — Multiple Address Books using Dictionary
         private Dictionary<string, AddressBook> addressBooks = new Dictionary<string, AddressBook>();
 
@@ -193,5 +198,136 @@ namespace BridgeLabzTraining.AddressBook_System
             foreach (var p in list)
                 Console.WriteLine(p);
         }
+
+        // ---------------- UC13: Save Contacts to File ----------------
+        public void SaveToFile()
+        {
+            AddressBook book = GetOrCreateBook();
+
+            if (book.ContactCount == 0)
+            {
+                Console.WriteLine("No contacts to save.");
+                return;
+            }
+
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                foreach (var person in book.Contacts)
+                {
+                    // CSV Format
+                    writer.WriteLine($"{person.FirstName},{person.LastName},{person.Address},{person.City},{person.State},{person.Zip},{person.PhoneNumber},{person.Email}");
+                }
+            }
+
+            Console.WriteLine("Contacts saved to file successfully!");
+        }
+
+        // ---------------- UC13: Load Contacts from File ----------------
+        public void LoadFromFile()
+        {
+            AddressBook book = GetOrCreateBook();
+
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("No file found to load data.");
+                return;
+            }
+
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                string[] data = line.Split(',');
+
+                ContactPerson person = new ContactPerson
+                {
+                    FirstName = data[0],
+                    LastName = data[1],
+                    Address = data[2],
+                    City = data[3],
+                    State = data[4],
+                    Zip = data[5],
+                    PhoneNumber = data[6],
+                    Email = data[7]
+                };
+
+                // Avoid duplicates
+                if (!book.Contacts.Contains(person))
+                {
+                    book.AddContact(person);
+
+                    // Also update city/state maps
+                    if (!cityMap.ContainsKey(person.City))
+                        cityMap[person.City] = new List<ContactPerson>();
+                    cityMap[person.City].Add(person);
+
+                    if (!stateMap.ContainsKey(person.State))
+                        stateMap[person.State] = new List<ContactPerson>();
+                    stateMap[person.State].Add(person);
+                }
+            }
+
+            Console.WriteLine("Contacts loaded from file successfully!");
+        }
+
+        // ---------------- UC14: Read Contacts from CSV ----------------
+        public void ReadFromCsv()
+        {
+            AddressBook book = GetOrCreateBook();
+
+            if (!File.Exists("AddressBookCSV.csv"))
+            {
+                Console.WriteLine("CSV file not found.");
+                return;
+            }
+
+            using (var reader = new StreamReader("AddressBookCSV.csv"))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                var records = csv.GetRecords<ContactPerson>();
+
+                foreach (var person in records)
+                {
+                    if (!book.Contacts.Contains(person))
+                    {
+                        book.AddContact(person);
+
+                        if (!cityMap.ContainsKey(person.City))
+                            cityMap[person.City] = new List<ContactPerson>();
+                        cityMap[person.City].Add(person);
+
+                        if (!stateMap.ContainsKey(person.State))
+                            stateMap[person.State] = new List<ContactPerson>();
+                        stateMap[person.State].Add(person);
+                    }
+                }
+            }
+
+            Console.WriteLine("Contacts successfully loaded from CSV file!");
+        }
+
+        // ---------------- UC14: Write Contacts to CSV ----------------
+        public void WriteToCsv()
+        {
+        AddressBook book = GetOrCreateBook();
+
+        if (book.ContactCount == 0)
+        {
+            Console.WriteLine("No contacts to write.");
+            return;
+        }
+
+        using (var writer = new StreamWriter("AddressBookCSV.csv"))
+        using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+        {
+            csv.WriteRecords(book.Contacts);
+        }
+
+        Console.WriteLine("Contacts successfully written to CSV file!");
+        }
+
+
+
+
     }
 }
