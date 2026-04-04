@@ -1,0 +1,5 @@
+Custom Furniture Manufacturing
+Context: A carpenter cuts wooden rods for furniture with pricing based on size.
+Scenario A: Determine best cut to maximize earnings for 12ft rod.
+Scenario B: If customer adds a fixed waste constraint, modify logic.
+Scenario C: Suggest cuts for maximizing both revenue and minimal waste.
