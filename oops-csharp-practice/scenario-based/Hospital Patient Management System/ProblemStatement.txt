@@ -1,0 +1,4 @@
+Hospital Patient Management System
+? Concepts: Patient, Doctor, Bill classes.
+? OOP: Encapsulation (Properties), Abstraction (Interface IPayable), Inheritance
+(InPatient, OutPatient : Patient), Polymorphism (DisplayInfo).

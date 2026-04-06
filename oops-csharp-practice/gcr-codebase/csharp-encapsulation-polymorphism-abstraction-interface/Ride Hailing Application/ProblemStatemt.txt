@@ -1,0 +1,17 @@
+Ride-Hailing Application
+Description: Develop a ride-hailing application.
+Abstract Class:
+Define an abstract class Vehicle with fields: vehicleId, driverName, and ratePerKm.
+Add an abstract method CalculateFare(double distance).
+Implement a concrete method GetVehicleDetails().
+Subclasses:
+Extend Vehicle into Car, Bike, and Auto.
+Override CalculateFare() based on type-specific rates.
+Interface:
+Implement an interface IGPS.
+Define methods GetCurrentLocation() and UpdateLocation().
+Encapsulation:
+Secure driver and vehicle details using private fields and properties.
+Polymorphism:
+Create a method that processes multiple vehicle types dynamically.
+Calculate fares based on the Vehicle reference.
