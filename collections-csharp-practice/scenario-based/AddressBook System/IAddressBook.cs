@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BridgeLabzTraining.AddressBook_System
+{
+    public interface IAddressBook
+    {
+        public void AddContact();
+        public void EditContact();
+        
+        //------uc4-------------//
+        public void DeleteContact();
+
+        //----------uc-8---------//
+		public void SearchPersonByCityOrState();
+
+        //----------uc-9----------//
+		void ViewPersonsByCityOrState();
+
+        //----------uc-10----------//
+        public void CountPersonsByCityOrState();
+
+        //----------UC11-----------------//
+        public void SortContactsByName();
+
+        //----------UC12-----------------//
+        public void SortByCity();
+        public void SortByState();
+        public void SortByZip();
+
+        //----------UC13-----------------//
+        public void SaveToFile();
+        public void LoadFromFile();
+
+        //----------UC14-----------------//
+        public void WriteToCsv();
+        public void ReadFromCsv();
+
+
+
+	}
+
+}
